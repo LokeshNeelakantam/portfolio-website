@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lokesh N | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <h2>Lokesh</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="themeToggle">🌙</button></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero glass">
+  <h1>Hi, I'm <span>Lokesh N</span></h1>
+  <h2 class="typing"></h2>
+  <p>Frontend Developer | IoT Enthusiast | Quality Inspector</p>
+
+  <a href="./Lokesh_Rezume__1_ (1).pdf" download class="btn">📄 Download Resume</a>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="cards">
+    <div class="card glass">HTML, CSS, JavaScript</div>
+    <div class="card glass">C, C++, Python, SQL</div>
+    <div class="card glass">FlutterFlow</div>
+    <div class="card glass">Oracle SQL</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="cards">
+    <div class="card glass">
+      <h3>Smart Blind Stick</h3>
+      <p>IoT based assistive device for visually impaired</p>
+      <a href="project.html">View Details →</a>
+    </div>
+
+    <div class="card glass 2">
+      <h3>Varicose Veins Detection</h3>
+      <p>IoT + Sensors + Cooling treatment</p>
+      <a href="project2.html">View Details →</a>
+
+    </div>
+
+    <div class="card glass">
+      <h3>Starbucks Landing Page</h3>
+      <p>HTML, CSS, JavaScript </p>
+      <a href="project3.html">View Details →</a>
+    </div>
+
+
+     <div class="card glass">
+      <h3>Private chat app</h3>
+      <p>HTML, CSS, JavaScript </p>
+      <a href="project4.html">View Details →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="glass">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer><br>
+  <p>© 2025 Lokesh N | Lokesh-88.github.io/portfolio</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Background (important for glass effect) */
+body {
+  margin: 0;
+  min-height: 100vh;
+     /* background: url("./img\ 3.jpg") no-repeat center center/cover;  */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);  
+  font-family: "Poppins", sans-serif;
+  color: #f7f8f8;
+}
+
+/* Main glass container */
+.glass-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Section headings */
+.glass-container h1,
+.glass-container h2 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+/* Title style */
+.glass-container h1 {
+  font-size: 2.2rem;
+  border-left: 5px solid #666b6b;
+  padding-left: 14px;
+}
+
+/* Subtitles (Working Principle, IoT Features) */
+.glass-container h2 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  color: #04cef6;
+}
+
+/* Text paragraphs */
+.glass-container p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: rgba(243, 241, 241, 0.9);
+}
+
+/* Bullet list glass cards */
+.glass-list {
+  margin-top: 15px;
+}
+
+.glass-list li {
+  list-style: none;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.glass-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 229, 255, 0.4);
+}
+
+/* Highlight text */
+.highlight {
+  color: #08cde7;
+  font-weight: 500;
+}
+
+/* Divider line */
+.glass-divider {
+  height: 1px;
+  margin: 30px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .glass-container {
+    padding: 20px;
+  }
+
+  .glass-container h1 {
+    font-size: 1.8rem;
+  }
+}

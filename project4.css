@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+  background: url("./img\ 4.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+  color: black;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.glass-card {
+  max-width: 450px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.glass-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.glass-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.glass-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.glass-card ul li {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 114, 255, 0.6);
+}

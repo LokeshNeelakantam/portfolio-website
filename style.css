@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  transition: 0.4s;
+}
+
+.dark {
+  background: #121212;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  animation: slideDown 1s;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(28, 111, 159, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 40px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+}
+
+.hero span {
+  color: #00eaff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #00eaff;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* Contact */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  padding: 10px;
+  width: 100%;
+  background: #00eaff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from { transform: translateY(-100px); }
+  to { transform: translateY(0); }
+}

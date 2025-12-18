@@ -1,0 +1,57 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full background using your image */
+body {
+  min-height: 100vh;
+  background: url("./img\ 1.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional dark overlay for better contrast */
+.background {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+}
+
+/* Glass Card */
+.glass-card {
+  width: 80%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* Border + shadow */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  color: #fff;
+}
+
+/* Headings */
+.glass-card h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Text */
+.glass-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
